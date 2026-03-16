@@ -1,0 +1,33 @@
+.layout{
+  display:flex;
+  gap:30px;
+  padding:40px;
+  background:#0f0f11;
+  min-height:100vh;
+  color:white;
+}
+
+/* Left profile card */
+.left{
+  width:320px;
+}
+
+/* Right content */
+.right{
+  flex:1;
+}
+
+/* Mobile responsive */
+@media (max-width:900px){
+
+  .layout{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .left{
+    width:100%;
+    max-width:350px;
+  }
+
+}
