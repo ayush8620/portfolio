@@ -35,7 +35,7 @@ export default function Hero() {
             Resume <FaDownload />
           </a>
     <a href="https://drive.google.com/drive/folders/19sKjIEUUKDHKO1UeOReKjSZTe9M4pwYC?usp=sharing" className="flex items-center justify-center gap-[0.5rem] py-[0.8rem] px-[2rem] rounded-[50px] font-[600] text-[1rem] bg-transparent text-[var(--text-primary)] border border-[var(--border-color)] cursor-pointer transition-all duration-300 hover:bg-[rgba(255,255,255,0.05)] hover:-translate-y-[3px] dark:hover:bg-[rgba(255,255,255,0.05)]" target="_blank">
-            OS <FaDownload />
+            OOPs With Java <FaDownload />
           </a>
         </div>
       </div>
