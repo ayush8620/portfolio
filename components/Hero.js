@@ -33,6 +33,7 @@ export default function Hero() {
           </a>
           <a href="https://drive.google.com/file/d/1PvFTaEKRuJAiC7oCimgvWrY7q727AOeo/view?usp=sharing" className="flex items-center justify-center gap-[0.5rem] py-[0.8rem] px-[2rem] rounded-[50px] font-[600] text-[1rem] bg-transparent text-[var(--text-primary)] border border-[var(--border-color)] cursor-pointer transition-all duration-300 hover:bg-[rgba(255,255,255,0.05)] hover:-translate-y-[3px] dark:hover:bg-[rgba(255,255,255,0.05)]" target="_blank">
             Resume <FaDownload />
+          </a>
         </div>
       </div>
     </section>
