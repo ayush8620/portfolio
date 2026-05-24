@@ -15,9 +15,9 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "+91 8896848466",
-    link: "tel:+918896848466",
-    linkText: "Call Me",
+    value: "N/A (Prefer Email)",
+    link: null,
+    linkText: null,
   },
   {
     icon: MapPin,
