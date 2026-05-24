@@ -109,7 +109,7 @@ export default function Certificates() {
   const isInView = useInView(sectionRef, { once: true, margin: "-80px" });
 
   return (
-    <section id="certificates" ref={sectionRef} className="py-[7rem] px-[5%] relative min-h-screen">
+    <section id="certificates" ref={sectionRef} className="py-[7rem] px-[5%] relative min-h-screen overflow-hidden">
       {/* ── ambient glows ── */}
       <div className="absolute top-[20%] right-[0%] w-[400px] h-[400px] rounded-full opacity-[0.06] pointer-events-none" style={{ background: "radial-gradient(circle, var(--accent-tertiary, #06b6d4) 0%, transparent 70%)" }} />
       <div className="absolute bottom-[10%] left-[5%] w-[450px] h-[450px] rounded-full opacity-[0.05] pointer-events-none" style={{ background: "radial-gradient(circle, var(--accent-primary) 0%, transparent 70%)" }} />
@@ -136,7 +136,7 @@ export default function Certificates() {
             </span>
           </motion.div>
 
-          <motion.h2 variants={fadeUp} className="text-[2.8rem] sm:text-[3.2rem] font-[800] leading-[1.15]">
+          <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.15]">
             <span className="text-gradient">Certificates</span>
           </motion.h2>
           

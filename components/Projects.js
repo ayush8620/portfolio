@@ -218,14 +218,14 @@ export default function Projects() {
           </div>
 
           {/* ── two-column layout ── */}
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.85fr]">
+          <div className="flex flex-col lg:grid lg:grid-cols-[1fr_0.85fr]">
             {/* ── left: content ── */}
             <motion.div
               variants={slideInLeft}
-              className="p-[2.5rem] lg:p-[3rem] flex flex-col"
+              className="p-6 sm:p-8 lg:p-12 flex flex-col order-2 lg:order-1"
             >
               <h3
-                className="text-[2.2rem] sm:text-[2.6rem] font-[800] leading-[1.15] mb-[0.6rem]"
+                className="text-3xl sm:text-4xl lg:text-[2.6rem] font-[800] leading-[1.15] mb-[0.6rem]"
                 style={{ color: "var(--text-primary)" }}
               >
                 Vynco Web Middleware
@@ -282,14 +282,14 @@ export default function Projects() {
               </motion.div>
 
               {/* ── CTA buttons ── */}
-              <div className="flex flex-wrap gap-[0.85rem] mt-auto">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mt-auto">
                 <motion.a
                   href="https://www.linkllyapp.in"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.04, y: -2 }}
                   whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center gap-[8px] py-[12px] px-[26px] rounded-[14px] text-[0.9rem] font-[600] text-white transition-shadow duration-300"
+                  className="flex w-full sm:w-auto justify-center items-center gap-[8px] py-3 px-6 rounded-xl text-[0.9rem] font-[600] text-white transition-shadow duration-300"
                   style={{
                     background:
                       "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)",
@@ -306,7 +306,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.04, y: -2 }}
                   whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center gap-[8px] py-[12px] px-[26px] rounded-[14px] text-[0.9rem] font-[600] border transition-colors duration-300"
+                  className="flex w-full sm:w-auto justify-center items-center gap-[8px] py-3 px-6 rounded-xl text-[0.9rem] font-[600] border transition-colors duration-300"
                   style={{
                     color: "var(--text-primary)",
                     borderColor: "var(--glass-border)",
@@ -322,7 +322,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.04, y: -2 }}
                   whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center gap-[8px] py-[12px] px-[26px] rounded-[14px] text-[0.9rem] font-[600] border transition-colors duration-300"
+                  className="flex w-full sm:w-auto justify-center items-center gap-[8px] py-3 px-6 rounded-xl text-[0.9rem] font-[600] border transition-colors duration-300"
                   style={{
                     color: "var(--text-primary)",
                     borderColor: "var(--glass-border)",
@@ -337,7 +337,7 @@ export default function Projects() {
             {/* ── right: mockup preview ── */}
             <motion.div
               variants={slideInRight}
-              className="relative flex items-center justify-center p-[2rem] lg:p-[3rem]"
+              className="relative flex items-center justify-center p-8 sm:p-12 lg:p-14 order-1 lg:order-2 border-b lg:border-b-0 lg:border-l border-[var(--glass-border)]"
               style={{
                 background:
                   "linear-gradient(160deg, rgba(59,130,246,0.04) 0%, rgba(139,92,246,0.06) 100%)",

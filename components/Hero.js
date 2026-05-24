@@ -97,7 +97,7 @@ export default function Hero() {
     <section
       id="hero"
       ref={sectionRef}
-      className="min-h-screen flex items-center justify-center relative px-[5%] overflow-hidden"
+      className="min-h-[100vh] flex flex-col items-center justify-center relative px-[5%] overflow-hidden pt-[100px] pb-[40px]"
     >
       {/* Animated gradient orbs */}
       <motion.div
@@ -140,17 +140,6 @@ export default function Hero() {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        {/* Availability badge */}
-        <motion.div variants={fadeUpVariant} className="mb-8">
-          <div className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full border border-[var(--border-color)] bg-[var(--glass-bg)] backdrop-blur-sm text-[0.8rem] font-[500] tracking-[1px] uppercase text-[var(--text-secondary)]">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
-            </span>
-            Available for Opportunities
-          </div>
-        </motion.div>
-
         {/* Profile Image with rotating gradient border */}
         <motion.div variants={fadeUpVariant} className="mb-8">
           <div className="relative group">
@@ -188,7 +177,7 @@ export default function Hero() {
         {/* Name */}
         <motion.h1
           variants={fadeUpVariant}
-          className="text-[clamp(2.8rem,8vw,5rem)] font-[800] leading-[1.1] mb-3"
+          className="text-[clamp(2.4rem,8vw,5rem)] font-[800] leading-[1.1] mb-3"
         >
           Ayush{" "}
           <span className="text-gradient">Yadav</span>
@@ -197,7 +186,7 @@ export default function Hero() {
         {/* Typewriter role */}
         <motion.h2
           variants={fadeUpVariant}
-          className="text-[clamp(1.4rem,4vw,2.2rem)] font-[700] mb-6 h-[1.4em]"
+          className="text-[clamp(1.2rem,4vw,2.2rem)] font-[700] mb-6 h-[1.4em]"
         >
           <span className="text-gradient">
             {roleText}
@@ -259,28 +248,7 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          variants={fadeUpVariant}
-          className="mt-16"
-        >
-          <motion.div
-            className="w-6 h-10 rounded-full border-2 border-[var(--border-color)] flex justify-center pt-2 cursor-pointer"
-            animate={{ opacity: [0.4, 0.8, 0.4] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            onClick={() =>
-              document
-                .getElementById("experience")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            <motion.div
-              className="w-1 h-2.5 rounded-full bg-[var(--accent-primary)]"
-              animate={{ y: [0, 8, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-            />
-          </motion.div>
-        </motion.div>
+
       </motion.div>
 
       {/* CSS for rotating border */}

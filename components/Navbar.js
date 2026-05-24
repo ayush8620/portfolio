@@ -119,10 +119,10 @@ export default function Navbar() {
       variants={navVariants}
       initial="hidden"
       animate="visible"
-      className={`fixed top-0 left-0 w-full flex justify-between items-center z-[1000] transition-all duration-500 ${
+      className={`fixed z-[1000] transition-all duration-500 flex justify-between items-center left-1/2 -translate-x-1/2 ${
         scrolled
-          ? "py-3 px-[5%] glass border-b border-[var(--glass-border)] shadow-[0_4px_30px_rgba(0,0,0,0.1)]"
-          : "py-5 px-[5%] bg-transparent"
+          ? "top-3 md:top-5 w-[92%] max-w-[900px] py-2.5 md:py-3 px-6 md:px-8 rounded-full bg-white/10 dark:bg-[#0a0a0a]/50 backdrop-blur-[24px] backdrop-saturate-[180%] border border-white/20 dark:border-[rgba(255,255,255,0.08)] shadow-[0_8px_32px_rgba(0,0,0,0.2)]"
+          : "top-0 w-full py-5 px-[5%] bg-transparent border-transparent"
       }`}
     >
       {/* Logo */}
