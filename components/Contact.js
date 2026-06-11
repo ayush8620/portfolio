@@ -8,8 +8,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "yadavaayush8484@gmail.com",
-    link: "mailto:yadavaayush8484@gmail.com",
+    value: "contact@ayushyadav.dev",
+    link: "mailto:contact@ayushyadav.dev",
     linkText: "Say Hello",
   },
   {
