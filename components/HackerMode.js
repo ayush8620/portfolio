@@ -722,44 +722,7 @@ export default function HackerMode({ active, setActive }) {
             </span>
           </div>
 
-          {/* Tooltip — desktop only */}
-          {!isMobile && (
-            <div
-              style={{
-                position: "absolute",
-                bottom: "calc(100% + 12px)",
-                left: "50%",
-                transform: "translateX(-50%)",
-                background: "rgba(0,0,0,0.9)",
-                color: "#00ff41",
-                padding: "8px 14px",
-                borderRadius: "8px",
-                fontSize: "12px",
-                fontFamily: "monospace",
-                whiteSpace: "nowrap",
-                opacity: 0,
-                pointerEvents: "none",
-                transition: "opacity 0.2s ease",
-                border: "1px solid rgba(0,255,65,0.2)",
-              }}
-              className="group-hover:!opacity-100"
-            >
-              Enter Hacker Mode 🔓
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: "-5px",
-                  left: "50%",
-                  transform: "translateX(-50%) rotate(45deg)",
-                  width: "10px",
-                  height: "10px",
-                  background: "rgba(0,0,0,0.9)",
-                  borderRight: "1px solid rgba(0,255,65,0.2)",
-                  borderBottom: "1px solid rgba(0,255,65,0.2)",
-                }}
-              />
-            </div>
-          )}
+
         </motion.button>
       )}
 

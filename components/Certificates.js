@@ -308,17 +308,20 @@ export default function Certificates() {
   const visibleCertificates = showAll ? certificates : certificates.slice(0, INITIAL_COUNT);
   const hasMore = certificates.length > INITIAL_COUNT;
 
-  // Particles data (generated once)
-  const particles = useRef(
-    Array.from({ length: 12 }, (_, i) => ({
-      id: i,
-      x: Math.random() * 100,
-      y: Math.random() * 100,
-      size: Math.random() * 4 + 2,
-      delay: Math.random() * 5,
-      duration: Math.random() * 4 + 4,
-    }))
-  ).current;
+  // Particles data (generated on client only to avoid hydration mismatch)
+  const [particles, setParticles] = useState([]);
+  useEffect(() => {
+    setParticles(
+      Array.from({ length: 12 }, (_, i) => ({
+        id: i,
+        x: Math.random() * 100,
+        y: Math.random() * 100,
+        size: Math.random() * 4 + 2,
+        delay: Math.random() * 5,
+        duration: Math.random() * 4 + 4,
+      }))
+    );
+  }, []);
 
   return (
     <section id="certificates" ref={sectionRef} className="py-[7rem] px-[5%] relative min-h-screen overflow-hidden">
