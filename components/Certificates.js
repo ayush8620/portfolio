@@ -285,27 +285,22 @@ function CertificateCard({ cert, idx }) {
 export default function Certificates() {
   const sectionRef = useRef(null);
   const gridRef = useRef(null);
+  const buttonRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-80px" });
   const [showAll, setShowAll] = useState(false);
 
   const handleToggle = () => {
     setShowAll((prev) => {
       const next = !prev;
-      if (next) {
-        // Expanding — scroll down to reveal new cards after they render
-        setTimeout(() => {
-          if (gridRef.current) {
-            const gridRect = gridRef.current.getBoundingClientRect();
-            const scrollTarget = window.scrollY + gridRect.top + gridRect.height * 0.4;
-            window.scrollTo({ top: scrollTarget, behavior: "smooth" });
-          }
-        }, 150);
-      } else {
-        // Collapsing — scroll up just a little
-        setTimeout(() => {
-          window.scrollTo({ top: window.scrollY - 800, behavior: "smooth" });
-        }, 100);
-      }
+      setTimeout(() => {
+        if (next) {
+          // Expanding — scroll button into view at bottom so new cards are visible above
+          buttonRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+        } else {
+          // Collapsing — scroll the grid top into view gently
+          gridRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }, 180);
       return next;
     });
   };
@@ -399,6 +394,7 @@ export default function Certificates() {
         {/* ── Show More / Show Less Button ── */}
         {hasMore && (
           <motion.div
+            ref={buttonRef}
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
