@@ -5,10 +5,10 @@ import { Award, FileText, Image as ImageIcon, ExternalLink, ChevronDown, Chevron
 
 const certificates = [
   {
-    title: "UPE-SEEDS 2026",
+    title: "UPE-SEEDS 2026 — Certificate of Participation",
     file: "/Certificate/UPE-SEEDS-2026.jpg",
     type: "image",
-    description: "Certificate of Participation — Uttar Pradesh East Startups Ecosystem and Entrepreneurship Development Summit (UPE-SEEDS 2026), AITM Varanasi, Sept 25–26, 2026",
+    description: "Uttar Pradesh East Startups Ecosystem and Entrepreneurship Development Summit, AITM Varanasi (Sept 25–26, 2026)",
   },
   {
     title: "Deloitte - Data Analytics Job Simulation",
@@ -22,78 +22,78 @@ const certificates = [
     type: "image",
     description: "Certificate of Completion — Cyber Job Simulation (May 31st, 2026)",
   },
-  { 
-    title: "Enigma XII", 
-    file: "/Certificate/Enigma XII.jpg", 
+  {
+    title: "TechSrijan 2026 — Core Team Member",
+    file: "/Certificate/TECHSRIJAN.jpg",
     type: "image",
-    description: "Participation/Achievement in Enigma XII"
+    description: "Certificate of Appreciation, United Institute of Technology, Prayagraj (Mar 2026)",
   },
-  { 
-    title: "TECHSRIJAN", 
-    file: "/Certificate/TECHSRIJAN.jpg", 
+  {
+    title: "UHack 4.0 — Organizing Committee Member",
+    file: "/Certificate/Uhack 4.0.jpg",
     type: "image",
-    description: "Participation in TECHSRIJAN"
+    description: "Certificate of Appreciation, United Institute of Technology, Prayagraj (Mar 2026)",
   },
-  { 
-    title: "Uhack 4.0", 
-    file: "/Certificate/Uhack 4.0.jpg", 
+  {
+    title: "Enigma XIII — Organizer (Tech Committee)",
+    file: "/Certificate/Enigma XII.jpg",
     type: "image",
-    description: "Participation in Uhack 4.0 Hackathon"
+    description: "Certificate of Appreciation, UNITED Group of Institutions, Prayagraj (Nov 2025)",
   },
-  { 
-    title: "Cybersecurity Summer Training", 
-    file: "/Certificate/CYBERSECURITY SUMMER TRANING.jpg", 
+  {
+    title: "Summer Training in Cyber Security",
+    file: "/Certificate/CYBERSECURITY SUMMER TRANING.jpg",
     type: "image",
-    description: "Completion of Summer Training in Cybersecurity"
+    description: "60-hour training with project, United Global Infoservice Pvt. Ltd. (Aug 2025)",
   },
-  { 
-    title: "Devtown", 
-    file: "/Certificate/Devtown.jpg", 
+  {
+    title: "DevTown — Certificate of Appreciation",
+    file: "/Certificate/Devtown.jpg",
     type: "image",
-    description: "Devtown Certification"
+    description: "Community support recognition from DevTown (Apr 2025)",
   },
-  { 
-    title: "HD204430 - Certification", 
-    file: "/Certificate/HD204430-AYUSH YADAV.jpg", 
+  {
+    title: "HackDiwas 2.0 — Participation",
+    file: "/Certificate/HD204430-AYUSH YADAV.jpg",
     type: "image",
-    description: "Certification of Achievement"
+    description: "United University, Prayagraj (May 2025), Credential ID HD204430",
   },
-  { 
-    title: "Codex", 
-    file: "/Certificate/codex.jpg", 
+  {
+    title: "CODE-X Contest — Participation",
+    file: "/Certificate/codex.jpg",
     type: "image",
-    description: "Codex Certification"
+    description: "GeeksforGeeks Student Chapter, UIT Prayagraj (May 2025)",
   },
-  { 
-    title: "Achievement Certificate", 
-    file: "/Certificate/IMG_20260405_215737.jpg", 
+  {
+    title: "AKTU 9th Rank — Certificate of Appreciation",
+    file: "/Certificate/IMG_20260405_215737.jpg",
     type: "image",
-    description: "Certificate of Achievement"
+    description: "9th position in 1st Semester B.Tech, AKTU 2024-25, UNITED Group of Institutions",
   },
-  { 
-    title: "Netcamp Certificate 1", 
-    file: "/Certificate/Netcamp/IMG_20260405_220110.jpg", 
+  {
+    title: "Netcamp — Summer Internship",
+    file: "/Certificate/Netcamp/IMG_20260405_220110.jpg",
     type: "image",
-    description: "Netcamp Training & Certification"
+    description: "Web Development, Android and Network Management (Sept 2025)",
   },
-  { 
-    title: "Netcamp Certificate 2", 
-    file: "/Certificate/Netcamp/IMG_20260405_220142.jpg", 
+  {
+    title: "Netcamp — Network Management & Web Development with Ethical Hacking",
+    file: "/Certificate/Netcamp/IMG_20260405_220142.jpg",
     type: "image",
-    description: "Netcamp Training & Certification"
+    description: "Netcamp Solutions Private Limited (Sept 2025)",
   },
-  { 
-    title: "Netcamp Certificate 3", 
-    file: "/Certificate/Netcamp/IMG_20260405_220202.jpg", 
+  {
+    title: "Netcamp — Industrial Training",
+    file: "/Certificate/Netcamp/IMG_20260405_220202.jpg",
     type: "image",
-    description: "Netcamp Training & Certification"
+    description: "Network Management and Web Development with Android and Core Java (Sept 2025)",
   },
-  { 
-    title: "Netcamp Certificate 4", 
-    file: "/Certificate/Netcamp/IMG_20260405_220237.jpg", 
+  {
+    title: "Netcamp — Android with Core Java",
+    file: "/Certificate/Netcamp/IMG_20260405_220237.jpg",
     type: "image",
-    description: "Netcamp Training & Certification"
-  }
+    description: "Netcamp Solutions Private Limited (Sept 2025)",
+  },
 ];
 
 /* ── Premium Animation Variants ── */
