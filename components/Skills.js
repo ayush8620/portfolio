@@ -4,9 +4,9 @@ import { useRef } from "react";
 import { Code2, Server, Terminal, Shield, GraduationCap } from "lucide-react";
 
 const skillCategories = [
-  { title: "Frontend Development", icon: Code2, skills: ["HTML", "CSS", "JavaScript", "React.js", "Responsive Design"] },
-  { title: "Backend & Tools", icon: Server, skills: ["Git", "GitHub", "Vercel", "VS Code", "Clerk", "Firebase", "ExpressJS"] },
-  { title: "Programming", icon: Terminal, skills: ["Python", "C"] },
+  { title: "Full Stack Development", icon: Code2, skills: ["HTML", "CSS", "JavaScript", "React.js", "Next.js", "Tailwind CSS", "Node.js", "ExpressJS", "REST APIs", "Responsive Design"] },
+  { title: "Databases & Tools", icon: Server, skills: ["PostgreSQL", "Firebase", "Firestore", "Git", "GitHub", "Vercel", "VS Code", "Clerk"] },
+  { title: "Programming", icon: Terminal, skills: ["JavaScript", "Python", "C", "C++"] },
   { title: "Cybersecurity", icon: Shield, skills: ["Ethical Hacking", "Penetration Testing (Nmap, Wireshark, Burp Suite)", "Web App Security", "SQL Injection", "XSS", "Reverse Shell"] }
 ];
 
