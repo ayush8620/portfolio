@@ -5,6 +5,12 @@ import { Award, FileText, Image as ImageIcon, ExternalLink, ChevronDown, Chevron
 
 const certificates = [
   {
+    title: "UPE-SEEDS 2026",
+    file: "/Certificate/UPE-SEEDS-2026.jpg",
+    type: "image",
+    description: "Certificate of Participation — Uttar Pradesh East Startups Ecosystem and Entrepreneurship Development Summit (UPE-SEEDS 2026), AITM Varanasi, Sept 25–26, 2026",
+  },
+  {
     title: "Deloitte - Data Analytics Job Simulation",
     file: "/Certificate/Data_Analytics_Deloitte.jpg",
     type: "image",
