@@ -203,9 +203,9 @@ export default function Hero() {
           variants={fadeUpVariant}
           className="text-[1.05rem] md:text-[1.1rem] text-[var(--text-secondary)] leading-[1.7] mb-10 max-w-[580px] mx-auto"
         >
-          Web developer skilled in JavaScript, React.js, and Firebase with
-          knowledge of Linux and cybersecurity, seeking to build secure and
-          scalable web applications.
+          Full Stack Developer skilled in Next.js, React.js, Node.js, PostgreSQL
+          and Firebase with a cybersecurity background, building secure and
+          scalable web applications end to end.
         </motion.p>
 
         {/* CTA Buttons */}
