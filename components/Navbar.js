@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import CoffeeButton from "@/components/CoffeeButton";
 
 const navLinks = [
   { href: "#experience", label: "Experience" },
@@ -10,7 +11,6 @@ const navLinks = [
   { href: "#certificates", label: "Certificates" },
   { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contact" },
-  { href: "/pricing", label: "Pricing" },
 ];
 
 export default function Navbar() {
@@ -122,7 +122,7 @@ export default function Navbar() {
       animate="visible"
       className={`fixed z-[1000] transition-all duration-500 flex justify-between items-center left-1/2 -translate-x-1/2 ${
         scrolled
-          ? "top-3 md:top-5 w-[92%] max-w-[900px] py-2.5 md:py-3 px-6 md:px-8 rounded-full bg-white/10 dark:bg-[#0a0a0a]/50 backdrop-blur-[24px] backdrop-saturate-[180%] border border-white/20 dark:border-[rgba(255,255,255,0.08)] shadow-[0_8px_32px_rgba(0,0,0,0.2)]"
+          ? "top-3 md:top-5 w-[92%] max-w-[960px] py-2.5 md:py-3 px-6 md:px-8 rounded-full bg-white/10 dark:bg-[#0a0a0a]/50 backdrop-blur-[24px] backdrop-saturate-[180%] border border-white/20 dark:border-[rgba(255,255,255,0.08)] shadow-[0_8px_32px_rgba(0,0,0,0.2)]"
           : "top-0 w-full py-5 px-[5%] bg-transparent border-transparent"
       }`}
     >
@@ -139,17 +139,17 @@ export default function Navbar() {
 
       {/* Desktop Menu */}
       <motion.div
-        className="hidden md:flex items-center gap-[2rem]"
+        className="hidden md:flex items-center gap-[1rem] lg:gap-[1.25rem]"
         variants={linkContainerVariants}
         initial="hidden"
         animate="visible"
       >
-        <ul className="flex items-center gap-[2rem]">
+        <ul className="flex items-center gap-[1.1rem] lg:gap-[1.75rem]">
           {navLinks.map((link) => (
             <motion.li key={link.href} variants={linkItemVariants}>
               <a
                 href={link.href}
-                className="relative text-[0.9rem] font-[500] uppercase tracking-[1.5px] py-1 transition-colors duration-300 group"
+                className="relative text-[0.8rem] tracking-[1px] lg:text-[0.9rem] lg:tracking-[1.5px] font-[500] uppercase py-1 transition-colors duration-300 group"
                 style={{
                   color:
                     activeSection === link.href
@@ -186,6 +186,11 @@ export default function Navbar() {
             </motion.li>
           ))}
         </ul>
+
+        {/* Buy Me a Coffee (Razorpay) */}
+        <motion.div variants={linkItemVariants}>
+          <CoffeeButton variant="desktop" />
+        </motion.div>
 
         {/* Desktop Theme Toggle */}
         {mounted && (
@@ -227,6 +232,7 @@ export default function Navbar() {
 
       {/* Mobile: Theme Toggle + Hamburger */}
       <div className="flex items-center gap-5 md:hidden z-[1001]">
+        <CoffeeButton variant="mobile" onOpen={() => setMenuOpen(false)} />
         {mounted && (
           <motion.button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
