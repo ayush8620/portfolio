@@ -11,6 +11,12 @@ const certificates = [
     description: "Uttar Pradesh East Startups Ecosystem and Entrepreneurship Development Summit, AITM Varanasi (Sept 25–26, 2026)",
   },
   {
+    title: "Summer Training 2026 in Agentic AI",
+    file: "/Certificate/AGENTIC AI SUMMER TRAINING 2026.jpg",
+    type: "image",
+    description: "60-hour training with project, United Global Infoservice Pvt. Ltd. (June 2026)",
+  },
+  {
     title: "Deloitte - Data Analytics Job Simulation",
     file: "/Certificate/Data_Analytics_Deloitte.jpg",
     type: "image",
